@@ -33,6 +33,6 @@ public class OperadorTernario {
             estado = "rechazado";
         }
         */
-       scanner.close();
+       s.close();
     }
 }
