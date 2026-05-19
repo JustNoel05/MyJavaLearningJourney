@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class OrdenMenorAMayor {
+public class OrdenMenorAMayorOperadorTernario {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Introduzca el primer numero");
