@@ -8,7 +8,7 @@ public class MultiplicacionSinAsterisco {
         int num1 = s.nextInt();
         System.out.println("Introduzca el segundo numero");
         int num2 = s.nextInt();
-        int numMayor,numMenor;
+        int numMayor,resultado = 0;
 
         if(num1 < 0 && num2 < 0){
                 num1 = -(num1);
@@ -16,14 +16,12 @@ public class MultiplicacionSinAsterisco {
             }
 
         numMayor = num1 > num2 ? num1 : num2;
-        numMenor = num1 > num2 ? num2: num1;
 
-
-        for(int i = 0; i < numMayor - 1; i++){
-            num1+=numMenor;
+        for(int i = 0; i < numMayor; i++){
+            resultado = resultado + num2;
         }
 
-        System.out.println(num1);
+        System.out.println(resultado);
         s.close();
     }
 }
