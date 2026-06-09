@@ -25,5 +25,24 @@ public class EjemploJavaUtilCalendar {
         SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS a");
         String fechaConFormato = formato.format(fecha);
         System.out.println("Fecha Con Formato = " + fechaConFormato);
+
+        Calendar calActual = Calendar.getInstance();
+        Date fecha2 = calActual.getTime();
+
+        if(fecha.after(fecha2)){
+                System.out.println("fecha1 (del usuario) es despues que la fecha2(actual)");
+            }else if(fecha.before(fecha2)){
+                System.out.println("fecha es anterior que fecha2");
+            }else if(fecha.equals(fecha2)){
+                System.out.println("Fecha es igual a fecha2");
+            }
+
+            if(fecha.compareTo(fecha2) > 0){
+                System.out.println("fecha1 (del usuario) es despues que la fecha2(actual)");
+            }else if(fecha.compareTo(fecha2) < 0){
+                System.out.println("fecha es anterior que fecha2");
+            }else if (fecha.compareTo(fecha2) == 0){
+               System.out.println("Fecha es igual a fecha2"); 
+            }
     }
 }
