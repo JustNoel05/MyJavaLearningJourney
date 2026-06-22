@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ArregloHistograma {
+public class ArregloTarea {
     public static void main(String[] args) {
         
         double[] a = new double[7];
