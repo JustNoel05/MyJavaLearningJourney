@@ -5,13 +5,13 @@ public class EjemploAutomovil {
         
         Automovil ford = new Automovil("ford","Focus");
         ford.setCilindrada(6.9);
-        ford.setColor("Azul");
+        ford.setColor(Color.AZUL);
 
-        Automovil mazda = new Automovil("Huitrado","Uwuntu", "cafe", 6.9);
+        Automovil mazda = new Automovil("Huitrado","Uwuntu", Color.NARANJO, 6.9);
         System.out.println("Mazda.fabricante = " + mazda.getFabricante());
 
-        Automovil nissan = new Automovil("nissan", "Navara", "Gris oscuro", 3.5, 50);
-        Automovil nissan2 = new Automovil("nissan", "Navara", "Gris oscuro", 3.5, 50);
+        Automovil nissan = new Automovil("nissan", "Navara", Color.GRIS, 3.5, 50);
+        Automovil nissan2 = new Automovil("nissan", "Navara", Color.GRIS, 3.5, 50);
 
 
         System.out.println("son iguales? " + (nissan == nissan2));
