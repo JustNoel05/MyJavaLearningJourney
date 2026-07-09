@@ -24,7 +24,7 @@ public class OperadorInstanceOf {
         b1 = decimal instanceof Number;
         System.out.println("decimal es del tipo numer = " + b1);
 
-        b1 = b1 instanceof boolean;
+        //b1 = b1 instanceof boolean;
         System.out.println("b1 es del tipo boolean = " + b1);
     }
 }

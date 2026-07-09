@@ -6,7 +6,8 @@ public enum Color {
     AZUL("Azul"),
     BLANCO("Blanco"),
     GRIS("Gris oscuro"),
-    NARANJO("Naranja");
+    NARANJO("Naranja"),
+    NEGRO("Nigga");
 
     private final String color;
 

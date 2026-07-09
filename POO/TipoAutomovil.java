@@ -2,12 +2,12 @@ package POO;
 
 public enum TipoAutomovil {
     SEDAN("Sedan", "Auto normal", 4),
-    STATION_WAGON("Station Wagon", "Auto grande", 4),
+    STATION_WAGON("Station Wagon", "Auto grande", 5),
     HATCHBACK("Hatchback",  "Auto compacto", 4),
     PICKUP("Pickup", "Camioneta", 4),
     COUPE("Coupé", "Auto pequeño", 2),
     CONVERTIBLE("Convertible", "Auto deportivo", 2),
-    FURGON("Furgon", "Auto utilitario", 4);
+    FURGON("Furgon", "Auto utilitario", 3);
 
     private final String nombre;
     private final int numeroPuerta;

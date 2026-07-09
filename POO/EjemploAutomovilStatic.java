@@ -4,19 +4,24 @@ public class EjemploAutomovilStatic {
     public static void main(String[] args) {
         
         Automovil ford = new Automovil("ford","Focus");
-        ford.setCilindrada(6.9);
+        ford.setMotor(new Motor(2.0, TipoMotor.BENCINA));
+        ford.setEstanque(new Estanque());
         ford.setColor(Color.AZUL);
         ford.setTipo(TipoAutomovil.HATCHBACK);
         
 
-        Automovil mazda = new Automovil("Huitrado","Uwuntu", Color.AMARILLO, 6.9);
+        Automovil mazda = new Automovil("Huitrado","Uwuntu", Color.AMARILLO,
+                         new Motor(3.0, TipoMotor.DIESEL));
         mazda.setTipo(TipoAutomovil.PICKUP);
+        mazda.setEstanque(new Estanque(50));
         System.out.println("Mazda.fabricante = " + mazda.getFabricante());
 
-        Automovil nissan = new Automovil("nissan", "Navara", Color.GRIS, 3.5, 50);
+        Automovil nissan = new Automovil("nissan", "Navara", Color.GRIS, 
+                        new Motor(4.0, TipoMotor.DIESEL), new Estanque(50));
         nissan.setTipo(TipoAutomovil.SEDAN);
 
-        Automovil nissan2 = new Automovil("nissan", "Navara", Color.GRIS, 3.5, 50);
+        Automovil nissan2 = new Automovil("nissan", "Navara", Color.GRIS, 
+                        new Motor(4.0, TipoMotor.BENCINA), new Estanque(50));
         nissan2.setTipo(TipoAutomovil.SEDAN);
 
         nissan2.setColor(Color.AMARILLO);
@@ -36,5 +41,7 @@ public class EjemploAutomovilStatic {
         TipoAutomovil tipoFord = ford.getTipo();
         System.out.println("Tipo ford = " + tipoFord.getNombre());
         System.out.println("Tipo ford descripcion = " + tipoFord.getDescripcion());
+
+        System.out.println(mazda.calcularConsumo(300, 70));
     }
 }

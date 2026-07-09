@@ -3,15 +3,21 @@ package POO;
 public class EjemploAutomovil {
     public static void main(String[] args) {
         
+        Motor motorFord = new Motor(2.0, TipoMotor.BENCINA);
         Automovil ford = new Automovil("ford","Focus");
-        ford.setCilindrada(6.9);
+        ford.setMotor(motorFord);
+        ford.setEstanque(new Estanque());
         ford.setColor(Color.AZUL);
 
-        Automovil mazda = new Automovil("Huitrado","Uwuntu", Color.NARANJO, 6.9);
+        Automovil mazda = new Automovil("Huitrado","Uwuntu", Color.NEGRO, new Motor(3.0 , TipoMotor.DIESEL));
+        mazda.setEstanque(new Estanque(45));
         System.out.println("Mazda.fabricante = " + mazda.getFabricante());
 
-        Automovil nissan = new Automovil("nissan", "Navara", Color.GRIS, 3.5, 50);
-        Automovil nissan2 = new Automovil("nissan", "Navara", Color.GRIS, 3.5, 50);
+        Automovil nissan = new Automovil("nissan", "Navara", Color.GRIS, 
+                        new Motor(4.0, TipoMotor.DIESEL), new Estanque(50));
+
+        Automovil nissan2 = new Automovil("nissan", "Navara", Color.GRIS,
+            new Motor(3.5, TipoMotor.BENCINA), new Estanque(45));
 
 
         System.out.println("son iguales? " + (nissan == nissan2));

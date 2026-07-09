@@ -45,7 +45,7 @@ public class OperadorInstanceOfTiposGenericos {
         b1 = decimal instanceof Integer;
         System.out.println("decimal es del tipo Integer = " + b1);
 
-        b1 = b1 instanceof boolean;
+        //b1 = b1 instanceof boolean;
         System.out.println("b1 es del tipo boolean = " + b1);
     }
 }
